@@ -28,7 +28,7 @@ export default [
     imageAlt: "Stranger Things",
   },
   {
-    city: "The Philippines Tour",
+    city: "Philippines Tour",
     averagePrice: 215,
     propertyCount: 43,
     imageUrl: "https://wallpapercave.com/dwp1x/wp6889318.jpg",
