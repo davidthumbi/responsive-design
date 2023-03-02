@@ -53,7 +53,7 @@ function App() {
         <p className="mt-2 text-gray-600">
           A selection of great movies to watch over the weekend.
         </p>
-        <div className="mt-6 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-6 grid gap-6 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
           {popularMovies.map((movie) => (
             <MovieCard movie={movie} key={movie.city} />
           ))}
