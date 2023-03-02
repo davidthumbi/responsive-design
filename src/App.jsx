@@ -1,10 +1,11 @@
 import popularMovies from "./data/data";
 import MovieCard from "./components/MoviesCard";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <div className="grid lg:grid-cols-2 2xl:grid-cols-5">
+      <div className="grid lg:grid-cols-2 2xl:grid-cols-5 border-t-4 border-red-600">
         <div className="px-8 py-10 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full xl:mr-0 2xl:col-span-2">
           <div className="xl:max-w-xl">
             <img
@@ -48,10 +49,9 @@ function App() {
       </div>
 
       <div className="max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8">
-        <h2 className="text-xl text-gray-900">Popular destinations</h2>
+        <h2 className="text-4xl text-red-600 font-semibold">Popular movies</h2>
         <p className="mt-2 text-gray-600">
-          A selection of great work-friendly cities with lots to see and
-          explore.
+          A selection of great movies to watch over the weekend.
         </p>
         <div className="mt-6 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
           {popularMovies.map((movie) => (
@@ -59,6 +59,7 @@ function App() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
